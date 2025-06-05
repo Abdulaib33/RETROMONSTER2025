@@ -1,0 +1,69 @@
+Structure MVC:
+
+	- app
+		- config
+			- params.php
+		- controllers
+		- models
+		- routers
+			- index.php
+		- views
+			- templates
+				- partials
+				- index.php
+	- core
+		- init.php
+		- connexion.php
+	- public	
+		- index.php
+
+
+
+
+Mettre en place une structure fonctionnelle sans route actuellement. 
+Attention, il va falloir tout de même initialiser la variable
+$content = "" 
+Dans les params histoire d'éviter l'erreur lors de son affichage dans le template
+
+Mettez un simple code HTML brut dans le template actuellement
+header + main + footer
+Vides et placez le $content dans le main
+
+- ./public/index.php
+- ./core/init.php
+- ./core/connexion.php
+- ./app/config/params.php
+- ./app/routers/index.php
+- ./app/views/templates/index.php
+----------------------------------------------------------------------
+	1. Mise en place du versionning
+	2. Mise en place d'une structure MVC de base
+	3. développement
+		1. Intégration du template fourni
+			1. Intégration du code client dans le template
+			2. Placement de la zone dynamique
+			3. Découpage du template en partials
+
+		2. Route par défaut
+			PATTERN: ?
+			CTRL: PagesController
+			ACTION: homeAction
+			VIEW: pages.home
+				includes
+					- photos.index
+					- authors.index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
