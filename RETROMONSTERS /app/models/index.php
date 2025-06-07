@@ -11,3 +11,7 @@
 // FROM ((monsters
 // JOIN monster_types ON monsters.type_id = monster_types.id)
 // JOIN rareties ON monsters.rarety_id = rareties.id)";
+
+
+
+//
