@@ -12,9 +12,9 @@
       </header>
 
       <main>
-            <?php echo $random ?>
-
-            <?php echo $lastAdded ?>
+        
+           <?php include_once "../app/views/templates/partials/_main.php" ?>
+    
       </main>
 
       <footer>  
