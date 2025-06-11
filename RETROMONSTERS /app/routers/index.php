@@ -1,13 +1,13 @@
 <?php 
 
 
-if (isset($_GET[""])) {
+if (isset($_GET["page"])) {
 
 } else {
 
-    global $header;
+    global $content;
     ob_start();
-    include "../views/templates/partials/_header.php";
-    $header = ob_get_clean();
+    include "../views/templates/partials/_main.php";
+    $content = ob_get_clean();
     
 }
